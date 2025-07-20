@@ -1,0 +1,335 @@
+content {
+    padding-bottom: 50%;
+}
+:root {
+    --cor-1: #281259;
+    --cor-2: #6a4ea6;
+    --cor-3: #1b02a6;
+    --cor-4: #F2F2F2;
+    --cor-5: #010326;
+
+}
+
+:root {
+    --letra-1: 'Playfair Display', serif;
+    --letra-2: 'Poppins', sans-serif;
+    --letra-3: 'Raleway', sans-serif;
+    --letra-4: 'Space Grotesk', sans-serif;
+
+}
+
+.content_menu {
+    background-color: var(--cor-4);
+    display: flex;
+    justify-content: space-between; 
+    gap: 2rem; 
+    padding: 1rem 2rem; 
+    align-items: center; 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.95); 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+    flex-wrap: wrap; 
+    color: var(--cor-1);
+}
+
+.content_logo {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 0 1rem 0;
+    gap: 15%;
+}
+
+.content_menu_p {
+    margin :0.5rem 0;
+    cursor: pointer; 
+    font-size: 0.9rem;
+    font-family: var(--letra-2);
+    text-decoration: none;
+    color: var(--cor-1);
+}
+
+
+.content_links {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    margin-left: 30rem;
+
+}
+
+
+.content_logo_img {
+    height: 60px; 
+    width: auto;  
+}
+
+.content_1 {
+    background-image: url(../img/background-marketing-transp.PNG);
+    width: 100%;
+    min-height: auto; /* isso não tem efeito, explico abaixo */
+    padding: 1rem 0 2rem 0; /* top | right | bottom | left */
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.content_1_img {
+    
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+}
+
+.content_1_img img {
+    width: 100%;
+    height: 100%;
+    max-height: 80vh;
+    object-fit: cover;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.content_1_text {
+    flex: 1 1 50%; /* Ocupa 50% do espaço disponível */          
+    max-width: 600px;
+    color: var(--cor-4);
+    z-index: 1;
+    background-color: rgba(var(--cor-5-rgb), 0.4); 
+    padding: 1.0rem;              
+    border-radius: 0.5rem;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    margin-top: -3rem; 
+}
+
+.content_1_text_1 {
+    font-family: var(--letra-1);
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--cor-4);
+    margin-bottom: 1rem;
+}
+
+.content_1_text_2 {
+    font-family: var(--letra-3);
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--cor-5);
+    margin: 1.5rem 0;
+}
+
+.content_1_text_p {
+    font-family: var(--letra-2);
+    font-size: 1.5rem;
+    color: var(--cor-4);
+    margin-bottom: 1rem;
+}
+
+.content_2 {
+    background-color: var(--cor-4);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+    padding: 1rem 0 2rem 0; /* top | right | bottom | left */
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.content_2_text {
+    flex: 1;
+    padding-right: 2rem;
+    color: var(--cor-1);
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.content_2_text h2 {
+    font-size: 3rem;
+    font-family: var(--letra-1);
+    position: relative; 
+    margin-bottom: 2.5rem;
+}
+
+.content_2_text h2::after {
+    content: '';
+    position: absolute;
+    left: -5vw;      
+    bottom: -30px;    
+    width: 100vw;
+    height: 1px;
+    background-color: var(--cor-1);
+}
+
+.content_2_text ul {
+    margin-top: 0.5rem;
+    line-height: 1.9;
+    padding-left: 1.5rem;
+}
+
+.content_2_text li {
+    margin-bottom: 1rem;
+    font-family: var(--letra-2);
+}
+
+.content_2_img {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start; /* imagem à esquerda */
+    align-items: center;
+    overflow: hidden; /* corta a borda se ultrapassar */
+}
+
+.content_2_img img {
+    width: 100%;
+    height: 100%;
+    max-height: 80vh; /* ajustável conforme necessidade */
+    object-fit: cover;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.content_3 {
+  background-color: var(--cor-2); 
+  width: 100%;
+  min-height: 100vh;
+  padding: 1rem 0 2rem 0; /* top | right | bottom | left */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  
+}
+
+.content_3_text {
+  width: 100%;
+  position: relative; /* necessário para que o ::after funcione certo */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.content_3_text h2 {
+  font-family: var(--letra-1);
+  color: var(--cor-4);
+  font-size: 3rem;
+  text-align: center;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.content_3_text::after {
+  content: '';
+  position: absolute;
+  bottom: 30px; 
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--cor-4);
+}
+
+.content_3_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: rem;
+}
+
+.content_3_box figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 220px;
+  text-align: center;
+}
+
+.content_3_box img {
+  width: 180px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50% / 25%;
+}
+
+.content_3_fig {
+  margin-top: 1rem;
+  font-family: var(--letra-3);
+  font-size: 1rem;
+  color: var(--cor-4);
+}
+
+.footer_content {
+  background-color: var(--cor-1);
+  padding: 5%;
+  color: var(--cor-4);
+  font-family: var(--letra-4);
+  font-size: 10px;
+  text-align: center; /* centraliza todo o conteúdo */
+}
+
+.footer_content_1 {
+  border-bottom: 1px solid var(--cor-4);
+  padding-bottom: 20px;
+}
+
+.footer_content_1 a img,
+.footer_content_1 img {
+  width: 60px;
+  height: 60px;
+  vertical-align: middle;
+}
+
+.footer_social_links {
+  display: flex;
+  justify-content: center; /* centraliza os ícones */
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.footer_contact {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center;     /* alinha verticalmente */
+  gap: 40px; /* espaço entre os dois blocos (email e whatsapp) */
+}
+
+.footer_contact_item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center; /* garante alinhamento horizontal */
+}
+
+.footer_contact_item img {
+  width: 35px; /* ajuste o tamanho dos ícones aqui */
+  height: 35px;
+}
+
+.footer_contact_item p {
+  margin: 0;
+  font-size: 13px; /* ou ajuste o que preferir */
+}
+
+.footer_content_2 {
+  margin-top: 20px;
+  font-size: 12px;
+}
