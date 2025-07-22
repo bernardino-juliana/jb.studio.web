@@ -72,7 +72,7 @@ content {
 }
 
 .content_1 {
-    background-image: url("img/background-marketing-transp.PNG");
+    background-image: url("img/background-marketing-mb.png");
     width: 100%;
     min-height: auto; /* isso não tem efeito, explico abaixo */
     padding: 1rem 0 2rem 0; /* top | right | bottom | left */
