@@ -9,6 +9,10 @@ html, body {
   background-color: var(--cor-1);
 }
 
+body {
+  padding-top: 100px; /* mesma altura aproximada do seu menu */
+}
+
 :root {
   --cor-1: #281259;
   --cor-2: #6a4ea6;
