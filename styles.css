@@ -1,8 +1,14 @@
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* Isso ajuda a evitar overflows com padding/border */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+html, body {
+  height: 100%;
+  background-color: var(--cor-1); /* se quiser cor no fundo da página */
+}
+
 
 content {
     padding-bottom: 50%;
@@ -59,12 +65,10 @@ content {
 
 .content_links {
     display: flex;
-    gap: 0.8rem;
     align-items: center;
-    margin-left: 30rem;
-
+    margin-left: 0;
+    gap: 2rem;
 }
-
 
 .content_logo_img {
     height: 60px; 
@@ -74,7 +78,7 @@ content {
 .content_1 {
     background-image: url("img/background-marketing-mb.png");
     width: 100%;
-    min-height: auto; /* isso não tem efeito, explico abaixo */
+    min-height: 100vh;
     padding: 1rem 0 2rem 0; /* top | right | bottom | left */
     background-repeat: no-repeat;
     background-size: cover;
